@@ -23,7 +23,7 @@ document.querySelector(".buttonWrapper").addEventListener("click", function () {
         setTimeout(() => {
             document.getElementsByClassName("loader")[0].classList.add("hidden");
             document.getElementsByClassName("rate")[0].classList.remove("hidden");
-            document.getElementsByClassName("rate")[0].innerHTML=6.40+"x";
+            document.getElementsByClassName("rate")[0].innerHTML=Math.floor(Math.random()*400+100)/100+"x";
         }, 500);
         document.querySelector("p.counter").innerText = "Sıfırla"
         var timer = 15
